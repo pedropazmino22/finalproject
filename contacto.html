@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/html5reset.css">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+    <title>Contacto</title>
+</head>
+
+<body>
+    <header>
+        <div class="hero_internal">
+            <a href="#main" class="skip">Skip to main content</a>
+            <nav class="navigation">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="Logotype" id="logo">
+                </a>
+                <ul class="nav_links">
+                    <li class="nav_item"><a href="index.html">Menú</a></li>
+                    <li class="nav_item"><a href="historia.html">Historia</a></li>
+                    <li class="nav_item_active"><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="heading">
+                <h1>Historia</h1>
+            </div>
+            <a href="#top">
+                <img class="backtop" id="backtop" src="/images/Backtop.svg" alt="Back to top button"></a>
+        </div>
+
+    </header>
+
+    <main id="main">
+
+        <div class="story_text">
+            <h2>Haz un pedido o cuéntanos tu</br> experiencia en Joun Yep</h2>
+        </div>
+
+        <div class="contact_information">
+
+            <div class="direccion">
+                <a href="https://maps.app.goo.gl/PwibVXVzwieduk246" target="_blank">
+                    <img src="/images/map.png" style="width: 600px; height: auto;"
+                        alt="Google Map image with a location pin">
+                </a>
+                </br>
+                <h3>Dirección</h3>
+                </br>
+                <a href="https://maps.app.goo.gl/PwibVXVzwieduk246" target="_blank">
+                    <p>Los Ceibos
+                        Calle 4ta. 102 y 1ra. Avenida
+                        Casilla 4921.
+                        Guayaquil, Ecuador</p>
+                </a>
+                </br>
+
+                <h3>Telefonos</h3>
+                </br>
+                <a href="tel:045009798">
+                    <p>04 500 9798</p>
+                </a>
+                <a href="tel:042003979">
+                    <p>04 500 9798</p>
+                </a>
+                </br>
+
+            </div>
+
+            <div class="form">
+                <form id="contactForm" action="https://formspree.io/f/mjvnjbdn" method="POST">
+
+                    <label for="firstName">Nombre Completo</label><br>
+                    <input type="text" name="firstName" id="firstName" placeholder="Juan Guerra" required>
+
+                    <label for="phoneNumber">Teléfono</label><br>
+                    <input type="tel" name="phoneNumber" id="phoneNumber" placeholder="099 999 9999">
+
+                    <label for="emailAddress">Correo Electrónico</label><br>
+                    <input type="email" name="emailAddress" id="emailAddress" placeholder="email@correo.com" required>
+
+                    <label for="cityName">Ciudad</label><br>
+                    <input type="text" name="cityName" id="cityName" placeholder="Guayaquil" required>
+
+                    <label for="message">Mensaje</label><br>
+                    <textarea name="message" id="message" rows="4" cols="50" required></textarea>
+
+                    <input type="submit" id="Enviar" value="Enviar">
+                    <input type="reset" value="Limpiar Formulario" id="resetBtn">
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="contact_section">
+            <h4>Contáctanos!</h4>
+            </br>
+            <div class="options_grid">
+                <a href="tel:045009798">
+                    <div class="contact_option">
+                        <img src="/images/Icon_phone.svg" alt="Icon of a phone">
+                        <p>04 500 9798</p>
+                    </div>
+                </a>
+                <a href="tel:042003979">
+                    <div class="contact_option">
+                        <img src="/images/Icon_phone.svg" alt="Icon of a phone">
+                        <p>04 200 3979</p>
+                    </div>
+                </a>
+                <a href="https://wa.me/123456789" target="blank">
+                    <div class="contact_option">
+                        <img src="/images/Icon_whatsapp.svg" alt="Whatsapp Icon">
+                        <p>Whatsapp</p>
+                    </div>
+                </a>
+                <a href="https://www.facebook.com/people/Restaurant-Joun-Yep/100063608375592/?sk=about" target="blank">
+                    <div class="contact_option">
+                        <img src="/images/Icon_facebook.svg" alt="Facebook Icon">
+                        <p>Facebook</p>
+                    </div>
+                </a>
+                <a href="https://www.instagram.com/jounyep/?hl=en" target="blank">
+                    <div class="contact_option">
+                        <img src="/images/Icon_instagram.svg" alt="Instagram Icon">
+                        <p>Instagram</p>
+                    </div>
+
+                </a>
+            </div>
+        </div>
+        <div class="info_section">
+            <img src="/images/Footer_logo.svg" alt="Logo">
+            </br>
+            <p>El restaurante Joun Yep ha entregado lo mejor de la gastronomía china por más de 50 años. Ubicado en Los
+                Ceibos, Guayaquil, se mantiene como uno de los establecimientos de cocina internacional más queridos por
+                la comunidad nacional e internacional.</p>
+            </br>
+            <ul class="nav_links">
+                <li class="nav_item"><a href="index.html">Menú</a></li>
+                <li class="nav_item"><a href="historia.html">Historia</a></li>
+                <li class="nav_item"><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+        <p class="copyright">© 2024 Corporación Joun Yep. Todos los derechos reservados.</p>
+
+
+    </footer>
+
+    <script src="/js/javascript2.js"></script>
+
+
+</body>
+
+</html>
