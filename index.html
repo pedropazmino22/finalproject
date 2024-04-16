@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/html5reset.css">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+    <title>Restaurante Joun Yep</title>
+</head>
+
+<body>
+    <header>
+        <div class="hero" id="top">
+            <a href="#main" class="skip">Skip to main content</a>
+            <nav class="navigation">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="Logotype" id="logo">
+                </a>
+                <ul class="nav_links">
+                    <li class="nav_item_active"><a href="index.html">Menú</a></li>
+                    <li class="nav_item"><a href="historia.html">Historia</a></li>
+                    <li class="nav_item"><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="heading">
+                <h1>Joun Yep</br>
+                    Auténtica Comida China</h1>
+                <a href="#menu">
+                    <button class="button">Ver Menú</button>
+                </a>
+            </div>
+            <a href="#top">
+                <img class="backtop" id="backtop" src="/images/Backtop.svg" alt="Back to top button"></a>
+        </div>
+        <div class="dishes_flex">
+            <img class="dishes" src="images/Dishes_header.png" alt="Aerial view of the restaurant's dishes">
+        </div>
+
+
+    </header>
+
+
+    <main id="main">
+
+        <!-- Area for the 'Classics' gallery -->
+        <div class="story_text">
+            <h2>Los Clásicos de Siempre</h2>
+            <p>Disfruta de la sazón cantonesa que tiene más de 50 anos en la ciudad de Guayaquil</p>
+        </div>
+
+
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <img src="/images/Slide1.jpg" style="width:100%"
+                    alt="Plato BBQ con carne en palito, wantanes fritos rellenos de chancho, samosas de camaron y rollitos primavera">
+                <div class="text">BBQ Joun Yep</div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="/images/Slide2.jpg" style="width:100%" alt="El clasico chaulafan Joun Yep">
+                <div class="text">Chaulafan Joun Yep</div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="/images/Slide3.jpg" style="width:100%" alt="Pescado al vapor al estilo cantones">
+                <div class="text">Pescado al Vapor</div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="/images/Slide4.jpg" style="width:100%"
+                    alt="Sopa de pollo tierno cocido en caldo con especias">
+                <div class="text">Sopa en Taza de Bambu</div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+
+
+
+
+
+        <!-- Area for the menu p1 -->
+        <div class="menu" id="menu">
+            <div class="story_text">
+                <h2>Menú</h2>
+                <p class="iva">Todos los precios incluyen IVA. </br>No incluye 10% de Servicio.</p>
+            </div>
+
+            <!-- Category: Entradas -->
+            <div class="menu_category">
+                <h3>Entradas</h3>
+                <div class="category_grid">
+                    <!-- Category items -->
+                    <div class="category_item">
+                        <h4>Wantán (10 u.)</h4>
+                        <p>Rellenos de Res o Pollo. Rellenos de Camarón (+$1.50)</p>
+                        <p class="price">$9.00</p>
+                    </div>
+                    <div class="category_item">
+                        <h4>Canapec de Camarón</h4>
+                        <p>Pasta de camarón sobre pan crocante.</p>
+                        <p class="price">$10.50</p>
+                    </div>
+                    <div class="category_item">
+                        <h4>Enrollados Primavera (10 u.)</h4>
+                        <p>Rollos crocantes rellenos de vegetales.</p>
+                        <p class="price">$9.50</p>
+                    </div>
+                    <div class="category_item">
+                        <h4>Mini Piernitas de Pollo (10 u.)</h4>
+                        <p>Acompañadas de una salsa: agridulce, cereza o limón.</p>
+                        <p class="price">$9.50</p>
+                    </div>
+                    <div class="category_item">
+                        <h4>Costillitas en Salsa de Cereza</h4>
+                        <p>Mini costillas de cerdo bañadas en salsa dulce de cereza.</p>
+                        <p class="price">$17.00</p>
+                    </div>
+                    <div class="category_item">
+                        <h4>Camarones Pavo Real (8 u.)</h4>
+                        <p>En corte Pavo Real acompañados de una salsa a elección: cangrejo o jamón.</p>
+                        <p class="price">$19.00</p>
+                    </div>
+                    <div class="category_item">
+                        <h4>Bolas de Camarón (6 u.)</h4>
+                        <p>Mezcla de camarones molidos y especias. Acompañadas por una salsa a elección: tradicional o
+                            cangrejo.</p>
+                        <p class="price">$19.00</p>
+                    </div>
+                    <div class="category_item">
+                        <h4>Canasta Joun Yep</h4>
+                        <p>Crujiente canasta de papas, servida con camarón, lomo o pollo, salteados con vegetales. </p>
+                        <p class="price">$26.50</p>
+                    </div>
+                    <div class="category_item">
+                        <h4>Uñas de Canfrejo</h4>
+                        <p>Uñas de cangrejo con envoltura de camarón.</p>
+                        <p class="price">$19.00</p>
+                    </div>
+                    <div class="category_item">
+                        <h4>Conchas Volcán</h4>
+                        <p>Conchas flambeadas en salsa de jengibre y vegetales. (Ordenar con 1 día de anticipación)</p>
+                        <p class="price">$28.00</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category: Platos Fuertes: Pollo -->
+            <div class="menu_category">
+                <h3>Platos Fuertes con Pollo</h3>
+                <div class="category_grid">
+                    <!-- Category items -->
+                    <div class="category_item">
+                        <h4>Pollo Picante 🔥</h4>
+                        <p>Pollo salteado en salsa de soya y ají.</p>
+                        <p class="price">$17.00</p>
+                    </div>
+                    <div class="category_item">
+                        <h4>Pollo Agridulce</h4>
+                        <p>Pollo salteado en nuestra salsa agridulce, acompañado de vegetales.</p>
+                        <p class="price">$17.00</p>
+                    </div>
+                    <div class="category_item">
+                        <h4>Pollo con Vegetales</h4>
+                        <p>Pollo y vegetales salteados en salsa de soya.</p>
+                        <p class="price">$17.00</p>
+                    </div>
+                    <div class="category_item">
+                        <h4>Pollo General Tso 🔥</h4>
+                        <p>Pollo salteado en nuestra salsa especial de hoisin, pasta de soya y ají.</p>
+                        <p class="price">$18.00</p>
+                    </div>
+                    <div class="category_item">
+                        <h4>Pollo Sésamo</h4>
+                        <p>Tiras de pollo salteadas con salsa de soya, ostión y sésamo.</p>
+                        <p class="price">$18.00</p>
+                    </div>
+                    <div class="category_item">
+                        <h4>Pollo con Nuez</h4>
+                        <p>Pollo salteado en salsa de soya y nueces acarameladas. </p>
+                        <p class="price">$18.00</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category: Platos Fuertes: Res -->
+            <div class="menu_category">
+                <h3>Platos Fuertes con Res</h3>
+                <div class="category_grid">
+                    <!-- Category items -->
+                    <div class="category_item">
+                        <h4>Lomo con Vegetales</h4>
+                        <p>Lomo salteado en salsa de soya y vegetales.</p>
+                        <p class="price">$17.00</p>
+                    </div>
+
+                    <div class="category_item">
+                        <h4>Lomo con Salsa de Ostión</h4>
+                        <p>Lomo salteado en salsa de soya y ostión.</p>
+                        <p class="price">$17.00</p>
+                    </div>
+
+                    <div class="category_item">
+                        <h4>Lomo al Panko</h4>
+                        <p>Lomo apanado en harina panko, servido con papas fritas.</p>
+                        <p class="price">$17.00</p>
+                    </div>
+
+                    <div class="category_item">
+                        <h4>Lomo con Choclitos</h4>
+                        <p>Lomo y choclitos salteados en salsa de soya y hoisin.</p>
+                        <p class="price">$18.00</p>
+                    </div>
+
+                    <div class="category_item">
+                        <h4>Chopsuey</h4>
+                        <p>Combinación de pollo, lomo, camarones y vegetales, salteados en salsa de soya.</p>
+                        <p class="price">$18.00</p>
+                    </div>
+
+                    <div class="category_item">
+                        <h4>Lomo con Piña</h4>
+                        <p>Lomo y piñas salteadas en salsa de soya.</p>
+                        <p class="price">$17.00</p>
+                    </div>
+
+                    <div class="category_item">
+                        <h4>Lomo con Salsa Tausí</h4>
+                        <p>Lomo salteado en salsa tausí y vegetales.</p>
+                        <p class="price">$17.00</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- Area for History -->
+        <div class="highlight">
+            <div class="highlight_text">
+                <h2>Cincuenta años de historia en el corazón de Guayaquil</h2>
+                <p>El restaurante Joun Yep ha entregado lo mejor de la gastronomía china por más de 50 años. Ubicado en
+                    Los Ceibos, Guayaquil, se mantiene como uno de los establecimientos de cocina internacional más
+                    queridos por la comunidad nacional e internacional.</p>
+                <a href="/Historia.html">
+                    <button class="button_ghost">Ver Historia</button></a>
+            </div>
+            <div class="highlight_image">
+                <img src="/images/History_A.png" alt="Polaroids that show the restaurant and its founders" width="800"
+                    height="auto">
+            </div>
+        </div>
+
+        <!-- Area for the menu P2 -->
+        <div class="menu">
+
+            <!-- Category: Entradas -->
+            <div class="menu_category">
+                <h3>Tallarín y Arroz</h3>
+                <div class="category_grid">
+                    <!-- Category items -->
+                    <div class="category_item">
+                        <h4>Chaufán Joun Yep</h4>
+                        <p>Arroz salteado con salsa de soya servido con pollo y camarón. Puede escogerlo también de
+                            pollo, lomo o camarón.</p>
+                        <p class="price">$10.50</p>
+                    </div>
+
+                    <div class="category_item">
+                        <h4>Arroz Michi</h4>
+                        <p>Salteado y servido con carne en salsa de ajo.</p>
+                        <p class="price">$10.50</p>
+                    </div>
+
+                    <div class="category_item">
+                        <h4>Chaufán Cantonés</h4>
+                        <p>Nuestro original chaufán blanco.</p>
+                        <p class="price">$10.50</p>
+                    </div>
+
+                    <div class="category_item">
+                        <h4>Cocolón Joun Yep</h4>
+                        <p>Cama de arroz crocante y proteína salteada con vegetales con lomo o pollo. Con camarón (+
+                            $3.00)
+                        </p>
+                        <p class="price">$23.00</p>
+                    </div>
+
+                    <div class="category_item">
+                        <h4>Tallarín Joun Yep</h4>
+                        <p>Tallarín salteado servido con pollo y camarón. Puede escogerlo también de pollo, lomo o
+                            camarón.</p>
+                        <p class="price">$10.50</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category: Platos Fuertes: Pollo -->
+            <div class="menu_category">
+                <h3>Adicionales</h3>
+                <div class="category_grid">
+                    <!-- Category items -->
+                    <div class="category_item">
+                        <h4>Arroz Frito</h4>
+                        <p></p>
+                        <p class="price">$5.50</p>
+                    </div>
+
+                    <div class="category_item">
+                        <h4>Arroz Blanco</h4>
+                        <p></p>
+                        <p class="price">$4.50</p>
+                    </div>
+
+                    <div class="category_item">
+                        <h4>BBQ Porción Completa</h4>
+                        <p></p>
+                        <p class="price">$9.00</p>
+                    </div>
+
+                    <div class="category_item">
+                        <h4>Hongos</h4>
+                        <p></p>
+                        <p class="price">$10.50</p>
+                    </div>
+
+                    <div class="category_item">
+                        <h4>Carne En Palito (4 u)</h4>
+                        <p></p>
+                        <p class="price">$8.50</p>
+                    </div>
+
+                    <div class="category_item">
+                        <h4>Media Porción De Wantán</h4>
+                        <p></p>
+                        <p class="price">$6.00</p>
+                    </div>
+
+                    <div class="category_item">
+                        <h4>Relleno De Res (5 u.)</h4>
+                        <p></p>
+                        <p class="price">$8.50</p>
+                    </div>
+
+                    <div class="category_item">
+                        <h4>Nueces Acarameladas</h4>
+                        <p></p>
+                        <p class="price">$8.50</p>
+                    </div>
+
+                    <div class="category_item">
+                        <h4>Porción De Cocolón</h4>
+                        <p></p>
+                        <p class="price">$8.50</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="contact_section">
+            <h4>Contáctanos!</h4>
+            </br>
+            <div class="options_grid">
+                <a href="tel:045009798">
+                    <div class="contact_option">
+                        <img src="/images/Icon_phone.svg" alt="Icon of a phone">
+                        <p>04 500 9798</p>
+                    </div>
+                </a>
+                <a href="tel:042003979">
+                    <div class="contact_option">
+                        <img src="/images/Icon_phone.svg" alt="Icon of a phone">
+                        <p>04 200 3979</p>
+                    </div>
+                </a>
+                <a href="https://wa.me/123456789" target="blank">
+                    <div class="contact_option">
+                        <img src="/images/Icon_whatsapp.svg" alt="Whatsapp Icon">
+                        <p>Whatsapp</p>
+                    </div>
+                </a>
+                <a href="https://www.facebook.com/people/Restaurant-Joun-Yep/100063608375592/?sk=about" target="blank">
+                <div class="contact_option">
+                    <img src="/images/Icon_facebook.svg" alt="Facebook Icon">
+                    <p>Facebook</p>
+                </div>
+            </a>
+                <a href="https://www.instagram.com/jounyep/?hl=en" target="blank">
+                    <div class="contact_option">
+                        <img src="/images/Icon_instagram.svg" alt="Instagram Icon">
+                        <p>Instagram</p>
+                    </div>
+
+                </a>
+            </div>
+        </div>
+        <div class="info_section">
+            <img src="/images/Footer_logo.svg" alt="Logo">
+            </br>
+            <p>El restaurante Joun Yep ha entregado lo mejor de la gastronomía china por más de 50 años. Ubicado en Los
+                Ceibos, Guayaquil, se mantiene como uno de los establecimientos de cocina internacional más queridos por
+                la comunidad nacional e internacional.</p>
+            </br>
+            <ul class="nav_links">
+                <li class="nav_item"><a href="index.html">Menú</a></li>
+                <li class="nav_item"><a href="historia.html">Historia</a></li>
+                <li class="nav_item"><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+        <p class="copyright">© 2024 Corporación Joun Yep. Todos los derechos reservados.</p>
+
+
+    </footer>
+
+
+    <script src="/js/javascript.js"></script>
+
+
+</body>
+
+</html>
